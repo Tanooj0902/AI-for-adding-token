@@ -2,8 +2,6 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import "./App.css";
 import axios from "axios";
 import Tooltip from "@mui/material/Tooltip";
-import { useDropzone } from "react-dropzone";
-import { X } from "lucide-react";
 
 function App() {
   // const [response, setResponse] = useState({
@@ -27,7 +25,7 @@ function App() {
     const currentInput = input;
     setInput("");
     try {
-      const res = await axios.post("http://localhost:5000/api/generate", {
+      const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}http://localhost:5000/api/generate`, {
         input: currentInput,
       });
       const newQA = {
