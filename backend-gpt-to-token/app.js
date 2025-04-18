@@ -14,7 +14,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.post('/api/generate', async (req, res) => {
+app.post('api/generate', async (req, res) => {
   const { input } = req.body;
 
   try {
