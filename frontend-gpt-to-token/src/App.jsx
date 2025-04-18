@@ -13,7 +13,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const textareaRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const removeFile = (name) => {
     setFiles(files.filter((file) => file.name !== name));
