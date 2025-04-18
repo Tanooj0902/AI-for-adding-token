@@ -4,10 +4,6 @@ import axios from "axios";
 import Tooltip from "@mui/material/Tooltip";
 
 function App() {
-  // const [response, setResponse] = useState({
-  //   question: '',
-  //   answer: ''
-  // });
   const [responses, setResponses] = useState([]);
   const [files, setFiles] = useState([]);
   const [messages, setMessages] = useState([]);
@@ -25,7 +21,7 @@ function App() {
     const currentInput = input;
     setInput("");
     try {
-      const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}/api/generate`, {
+      const res = await axios.post(`http://localhost:5000/api/generate`, {
         input: currentInput,
       });
       const newQA = {
