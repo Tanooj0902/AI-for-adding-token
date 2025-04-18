@@ -25,7 +25,7 @@ function App() {
     const currentInput = input;
     setInput("");
     try {
-      const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}http://localhost:5000/api/generate`, {
+      const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}/api/generate`, {
         input: currentInput,
       });
       const newQA = {
