@@ -1,0 +1,99 @@
+#root {
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    width: 66vw;
+}
+
+body {
+    background-color: #f7f8fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    height: 90vh;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #10a37f;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 1.2rem;
+}
+
+.message-area {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #4f554a;
+}
+
+.message.ai {
+    align-self: flex-start;
+    background-color: #2a1515;
+    /* float: right;
+    margin-top: 1.2rem; */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eaeaea;
+    width: 97%;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.input-container button {
+    background-color: #10a37f;
+    border: none;
+    color: white;
+    padding: 0 16px;
+    margin-left: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.input-container button:hover {
+    background-color: #0e8a6b;
+}
+  
+  
